@@ -1,3 +1,17 @@
+"""
+    WEATHER APPLICATION 
+    
+    
+    Requirements : 
+            sqlite3 Database having two tables
+                    users(name, password, email)
+                    city(username, city)
+                    
+            API key of OpenWeather API
+            Flask Module
+           
+"""
+
 from flask import Flask
 from flask import render_template
 from datetime import datetime
