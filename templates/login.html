@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <link href="/static/css/signin.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    {% include "flash_message.html" %}
+
+    <!-- <div>
+        <form method="POST" action="/signin">
+            <input type="text" name="user" placeholder="username" required>
+            <input type="password" name="passwd" placeholder="password" required>
+            <input type="submit" value="LogIn!">
+        </form>
+
+        <br>
+            <a href="/signup" 
+            style="color:white;background-color: red;border-radius: 2px;justify-content: right;">
+            signup</a>
+    </div> -->
+
+    <br>
+        <form class="form-signin" method="POST" action="/signin">
+            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label for="inputEmail" class="sr-only">Username</label>
+            <input name="user" type="text" id="inputEmail" class="form-control" placeholder="username" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input name="passwd" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <a  href="/signup" class="btn btn-lg btn-primary btn-block">SignUp!</a>
+            
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+          </form>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
